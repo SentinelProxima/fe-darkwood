@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.attribute {
+  margin-top: 10px;
+}
+
+.attName {
+  display: inline;
+  margin-right: 10px;
+}
+
+.attButtons {
+  display: inline;
+}
+
+.errortext {
+  color: red;
+}
