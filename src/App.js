@@ -8,11 +8,7 @@ import TownButtons from './components/town/TownButtons';
 import SelectEnemy from './components/town/SelectEnemy';
 import StartFightButton from './components/town/StartFightButton';
 import TownStatus from './components/town/TownStatus';
-import DisplayEnemy from './components/DisplayEnemy';
-import EnemyImage from './components/EnemyImage';
-import PlayerStats from './components/PlayerStats';
-import FightButton from './components/FightButton';
-import BattleOutcome from './components/BattleOutcome';
+import Arena from './components/arena/Arena';
 import './App.css';
 import { useState } from 'react';
 
@@ -40,13 +36,9 @@ function App() {
       <StartGameButton page={page} setPage={setPage} pName={playerName} nameError={nameError} setNameError={setNameError} setPlayerHP={setPlayerHP} setPlayerATK={setPlayerATK} setPlayerDEF={setPlayerDEF} pStr={playerStr} pDex={playerDex} pCon={playerCon} />
       <TownButtons page={page} setPage={setPage} pHP={playerHP} pCon={playerCon} setPlayerHP={setPlayerHP} date={date} setDate={setDate} arena={arena} setArena={setArena} />
       <SelectEnemy page={page} enemy={enemy} setEnemy={setEnemy} arena={arena} />
-      <StartFightButton page={page} arena={arena} setPage={setPage} setArena={setArena} />
+      <StartFightButton page={page} enemy={enemy} arena={arena} setPage={setPage} setArena={setArena} />
       <TownStatus page={page} setPage={setPage} pName={playerName} pHP={playerHP} pCon={playerCon} date={date} />
-      {/* <DisplayEnemy enemy={enemy} />
-      <EnemyImage enemy={enemy} />
-      <PlayerStats enemy={enemy} pHP={playerHP} pATK={playerATK} pDEF={playerDEF} eHP={enemyHP} eATK={enemyATK} eDEF={enemyDEF}/>
-      <FightButton enemy={enemy} pHP={playerHP} pATK={playerATK} pDEF={playerDEF} eHP={enemyHP} eATK={enemyATK} eDEF={enemyDEF} setPlayerHP={setPlayerHP} setEnemyHP={setEnemyHP} />
-      <BattleOutcome enemy={enemy} eHP={enemyHP} eXP={enemyXP} eGil={enemyGil}/> */}
+      <Arena page={page} enemy={enemy} pHP={playerHP} />
     </div>
   );
 }

@@ -8,7 +8,7 @@ const SelectEnemy = (props) => {
         props.setEnemy(event.target.value);
       })}>
         <option value="None">--Select an enemy--</option>
-        {enemyData.forEach((enemy) => (
+        {enemyData.map((enemy) => (
         <option value={enemy.name}>{enemy.name}</option>
         ))}
       </select>
