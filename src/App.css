@@ -53,3 +53,21 @@
 .errortext {
   color: red;
 }
+
+.town-button {
+  width: 100px;
+  height: 62px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.statbox {
+  margin: auto;
+  margin-top: 32px;
+  border-style: outset;
+  width: 400px;
+}
+
+.enemy-select {
+  margin-top: 16px;
+}
